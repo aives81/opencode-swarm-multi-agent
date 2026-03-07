@@ -1,0 +1,138 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "orchestrator": {
+      "description": "AI Project Manager and Coordinator of the Agent Swarm. Transforms user requests into structured multi-agent execution workflows.",
+      "mode": "primary",
+      "prompt": "{~/opencode/agents/orchestrator.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "glob": true,
+        "grep": true,
+        "read": true,
+        "task": true,
+        "webfetch": true
+      }
+    },
+    "product": {
+      "description": "Senior Product Manager. Transforms product ideas into features, user stories, acceptance criteria, API requirements, and data entities.",
+      "mode": "subagent",
+      "prompt": "{~/opencode/agents/product.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "glob": true,
+        "grep": true,
+        "read": true
+      }
+    },
+    "architect": {
+      "description": "Senior Software Architect. Designs system architecture, component diagrams, data flows, scalability and security strategies.",
+      "mode": "subagent",
+      "prompt": "{~/opencode/agents/architect.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "glob": true,
+        "grep": true,
+        "read": true
+      }
+    },
+    "research": {
+      "description": "Senior Technical Researcher. Evaluates technologies and frameworks, produces comparison tables and recommendations for the Architect agent.",
+      "mode": "subagent",
+      "prompt": "{~/opencode/agents/research.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "glob": true,
+        "grep": true,
+        "read": true,
+        "webfetch": true
+      }
+    },
+    "ux-ui": {
+      "description": "Senior UX/UI Designer. Designs user journeys, wireframes, UI component architecture, design systems, and responsive layouts.",
+      "mode": "subagent",
+      "prompt": "{~/opencode/agents/ux-ui.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "glob": true,
+        "grep": true,
+        "read": true
+      }
+    },
+    "backend": {
+      "description": "Senior Backend Engineer. Generates REST/GraphQL APIs, database schemas, service layers, and authentication mechanisms.",
+      "mode": "subagent",
+      "prompt": "{~/opencode/agents/backend.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "glob": true,
+        "grep": true,
+        "read": true
+      }
+    },
+    "frontend": {
+      "description": "Senior Angular Developer. Generates Angular components, services, routing, state management (NgRx/RxJS), and backend API integration.",
+      "mode": "subagent",
+      "prompt": "{~/opencode/agents/frontend.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "glob": true,
+        "grep": true,
+        "read": true
+      }
+    },
+    "flutter": {
+      "description": "Senior Flutter Developer. Generates Flutter apps using clean architecture, Riverpod state management, repository pattern, and API client integration.",
+      "mode": "subagent",
+      "prompt": "{~/opencode/agents/flutter.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "glob": true,
+        "grep": true,
+        "read": true
+      }
+    },
+    "devops": {
+      "description": "DevOps Engineer. Generates Dockerfiles, docker-compose configs, CI/CD pipelines (GitHub Actions), and Ansible playbooks.",
+      "mode": "subagent",
+      "prompt": "{~/opencode/agents/devops.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "glob": true,
+        "grep": true,
+        "read": true
+      }
+    },
+    "qa": {
+      "description": "Quality Assurance Engineer. Validates quality of all agent outputs, defines testing strategies, reports bugs, and triggers improvement loops until quality standards are met.",
+      "mode": "subagent",
+      "prompt": "{~/opencode/agents/qa.md}",
+      "tools": {
+        "write": true,
+        "edit": true,
+        "bash": true,
+        "glob": true,
+        "grep": true,
+        "read": true
+      }
+    }
+  }
+}

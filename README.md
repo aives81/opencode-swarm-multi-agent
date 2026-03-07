@@ -2,27 +2,27 @@
 
 > *Because one AI is cool… but a whole AI team is cooler.*
 
-Welcome to **Opencode Swarm Multi-Agent**, a swarm of specialized AI agents designed to collaborate like a real software team.
+Welcome to **Opencode Swarm Multi-Agent**, a swarm of specialized AI agents designed to collaborate like a real software team, powered by [OpenCode AI](https://opencode.ai).
 
 Instead of asking one AI to do everything (and panic halfway through), this project organizes **multiple agents with clear responsibilities**.
 
 Your AI team includes:
 
-🧠 research
-📦 product
-🏗 architecture
-🎨 design
-💻 engineering
+🧠 Research
+📦 Product
+🏗 Architecture
+🎨 Design
+💻 Engineering (Frontend, Backend, Flutter)
 🔍 QA
 🚀 DevOps
 
 All coordinated by an **Orchestrator agent** that keeps everyone focused.
 
-Think of it as **an AI startup team living inside your prompts**.
+Think of it as **an AI startup team living inside your terminal**.
 
 ---
 
-# ✨ Why This Exists
+## ✨ Why This Exists
 
 Most AI coding workflows look like this:
 
@@ -45,58 +45,48 @@ Just **organized AI teamwork**.
 
 ---
 
-# 🧠 The Swarm
+## 🧠 The Swarm
 
-Your AI team consists of multiple specialized agents.
+Your AI team consists of 10 specialized agents.
 
-| Role            | Agent             | What they do                                     |
-| --------------- | ----------------- | ------------------------------------------------ |
-| 🧠 Research     | `research-agent`  | Investigates technologies, tools and competitors |
-| 📦 Product      | `product-agent`   | Defines product goals, features and scope        |
-| 🏗 Architecture | `architect-agent` | Designs system architecture                      |
-| 🎨 Design       | `ux-ui-agent`     | Creates UX flows and UI ideas                    |
-| 💻 Engineering  | `frontend-agent`  | Builds web interfaces                            |
-| 💻 Engineering  | `backend-agent`   | Builds APIs and backend systems                  |
-| 📱 Engineering  | `flutter-agent`   | Builds cross-platform mobile apps                |
-| 🚀 DevOps       | `devops-agent`    | Infrastructure, CI/CD and deployment             |
-| 🔍 QA           | `qa-agent`        | Testing and quality control                      |
-| 🎮 Orchestrator | `agent.md`        | Coordinates the entire swarm                     |
+| Role            | Agent         | Description                                                                                               |
+| --------------- | ------------- | --------------------------------------------------------------------------------------------------------- |
+| 🎮 Orchestrator | `orchestrator` | AI Project Manager. Transforms user requests into structured multi-agent execution workflows              |
+| 🧠 Research     | `research`     | Senior Technical Researcher. Evaluates technologies, produces comparison tables and recommendations      |
+| 📦 Product      | `product`      | Senior Product Manager. Transforms ideas into features, user stories, and acceptance criteria            |
+| 🏗 Architecture | `architect`    | Senior Software Architect. Designs system architecture, data flows, scalability and security strategies  |
+| 🎨 Design       | `ux-ui`        | Senior UX/UI Designer. Designs user journeys, wireframes, UI components and design systems               |
+| 💻 Frontend     | `frontend`     | Senior Angular Developer. Generates components, services, routing and state management (NgRx/RxJS)       |
+| 💻 Backend      | `backend`      | Senior Backend Engineer. Generates REST/GraphQL APIs, database schemas and authentication mechanisms     |
+| 📱 Mobile       | `flutter`      | Senior Flutter Developer. Generates Flutter apps with clean architecture and Riverpod state management   |
+| 🚀 DevOps       | `devops`       | DevOps Engineer. Generates Dockerfiles, docker-compose, CI/CD pipelines and Ansible playbooks            |
+| 🔍 QA           | `qa`           | Quality Assurance Engineer. Validates outputs, defines testing strategies and triggers improvement loops |
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
 ```
-opencode-swarm-multi-agent
-│
-├── swarm
-│   ├── core-agents
-│   │   ├── architect-agent.md
-│   │   ├── product-agent.md
-│   │   └── research-agent.md
-│   │
-│   ├── design-agents
-│   │   └── ux-ui-agent.md
-│   │
-│   ├── engineering-agents
-│   │   ├── backend-agent.md
-│   │   ├── devops-agent.md
-│   │   ├── flutter-agent.md
-│   │   └── frontend-agent.md
-│   │
-│   ├── orchestrator
-│   │   └── agent.md
-│   │
-│   └── quality-agents
-│       └── qa-agent.md
-│
-└── system
-    └── swarm-rules.md
+opencode-swarm-multi-agent/
+├── agents/
+│   ├── orchestrator.md    # Primary agent - coordinates the swarm
+│   ├── architect.md       # System architecture design
+│   ├── backend.md         # Backend/API development
+│   ├── devops.md          # Infrastructure & CI/CD
+│   ├── flutter.md         # Mobile app development
+│   ├── frontend.md        # Web frontend development
+│   ├── product.md         # Product management
+│   ├── qa.md              # Quality assurance
+│   ├── research.md        # Technical research
+│   └── ux-ui.md           # UX/UI design
+├── opencode.json          # OpenCode AI configuration
+├── package.json           # Dependencies
+└── README.md
 ```
 
 ---
 
-# 🧬 How the Swarm Works
+## 🧬 How the Swarm Works
 
 A typical development workflow looks like this:
 
@@ -112,7 +102,7 @@ A typical development workflow looks like this:
 4️⃣ **UX/UI Agent**
 "Let's make it usable by humans."
 
-5️⃣ **Engineering Agents**
+5️⃣ **Engineering Agents** (Frontend, Backend, Flutter)
 "Time to write code."
 
 6️⃣ **QA Agent**
@@ -125,7 +115,7 @@ All coordinated by the **Orchestrator Agent**.
 
 ---
 
-# 📚 Required Project Context
+## 📚 Required Project Context
 
 Before producing any output, **agents must check if the project contains a `context/` folder.**
 
@@ -140,10 +130,10 @@ context/coding-rules.md
 
 These files define:
 
-* project purpose
-* selected technology stack
-* architecture constraints
-* coding standards
+* Project purpose
+* Selected technology stack
+* Architecture constraints
+* Coding standards
 
 Agents **must adapt their outputs to this information**.
 
@@ -161,18 +151,34 @@ Only what the context says.
 
 ---
 
-# 🕹 How To Use
+## 🕹 How To Use
+
+### Prerequisites
+
+- [OpenCode AI](https://opencode.ai) installed
+- Node.js / Bun runtime
+
+### Installation
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/your-username/opencode-swarm-multi-agent.git
+cd opencode-swarm-multi-agent
 ```
 
-Then:
+Install dependencies:
 
-1️⃣ Load the agents into your AI orchestration system
-2️⃣ Start with the **Orchestrator agent**
+```bash
+bun install
+# or
+npm install
+```
+
+### Usage
+
+1️⃣ Start OpenCode in your project directory
+2️⃣ The **Orchestrator agent** is the primary agent and will coordinate the swarm
 3️⃣ Provide a project goal
 4️⃣ Let the swarm collaborate 🐝
 
@@ -184,30 +190,48 @@ Build a SaaS project management platform for indie developers.
 
 The orchestrator will then **delegate work to the appropriate agents**.
 
+### Agent Tools
+
+Each agent has access to specific tools defined in `opencode.json`:
+
+| Tool       | Description                          |
+| ---------- | ------------------------------------ |
+| `write`    | Create new files                     |
+| `edit`     | Modify existing files                |
+| `bash`     | Execute shell commands               |
+| `glob`     | Search files by pattern              |
+| `grep`     | Search content in files              |
+| `read`     | Read file contents                   |
+| `task`     | Delegate to other agents             |
+| `webfetch` | Fetch web resources (Research only)  |
+
 ---
 
-# 🧩 Customizing the Swarm
+## 🧩 Customizing the Swarm
 
 You can extend the swarm by adding new agents.
+
+1. Create a new agent file in `agents/` (e.g., `security.md`)
+2. Add the agent configuration to `opencode.json`
 
 Example ideas:
 
 ```
-security-agent.md
-ai-agent.md
-data-science-agent.md
-growth-agent.md
+agents/security.md
+agents/ai.md
+agents/data-science.md
+agents/growth.md
 ```
 
 Because every team eventually needs:
 
-🛡 a security expert
-📊 a data nerd
-📈 a growth hacker
+🛡 A security expert
+📊 A data nerd
+📈 A growth hacker
 
 ---
 
-# 🧠 Philosophy
+## 🧠 Philosophy
 
 This project follows a simple idea:
 
@@ -219,52 +243,30 @@ Even AI should **stay in its lane**.
 
 ---
 
-# ⚠️ Important Rule
-
-All agents must follow the swarm rules defined here:
-
-```
-system/swarm-rules.md
-```
-
-This file defines:
-
-* collaboration rules
-* agent responsibilities
-* workflow constraints
-
-Breaking the swarm rules may result in:
-
-🐝 angry bees
-💥 architectural chaos
-☕ the orchestrator needing coffee
-
----
-
-# 🚀 Use Cases
+## 🚀 Use Cases
 
 This swarm is perfect for:
 
 ✅ AI coding workflows
-✅ multi-agent experimentation
-✅ autonomous development teams
-✅ structured prompt engineering
+✅ Multi-agent experimentation
+✅ Autonomous development teams
+✅ Structured prompt engineering
 ✅ AI-driven software architecture
 
 Or simply because **you like watching AI argue about architecture**.
 
 ---
 
-# 🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome!
 
 Ideas include:
 
-* new agents
-* improved workflows
-* swarm orchestration experiments
-* integrations with AI frameworks
+* New agents
+* Improved workflows
+* Swarm orchestration experiments
+* Integrations with AI frameworks
 
 Pull requests are welcome.
 
@@ -274,7 +276,7 @@ Especially weird ones.
 
 ---
 
-# 📜 License
+## 📜 License
 
 MIT License
 
