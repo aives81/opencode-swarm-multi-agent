@@ -280,4 +280,4 @@ MIT License
 
 Do whatever you want with it.
 
-Just don't blame the swarm if it becomes self-aware.
+Just don't blame the swarm if it becomes self-aware and starts scheduling sprint meetings without you 🤖
