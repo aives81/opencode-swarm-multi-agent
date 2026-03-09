@@ -163,7 +163,7 @@ Only what the context says.
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/opencode-swarm-multi-agent.git
+git clone https://github.com/aives81/opencode-swarm-multi-agent.git
 cd opencode-swarm-multi-agent
 ```
 
