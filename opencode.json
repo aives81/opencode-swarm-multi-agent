@@ -6,8 +6,8 @@
       "mode": "primary",
       "prompt": "{~/opencode/agents/orchestrator.md}",
       "tools": {
-        "write": true,
-        "edit": true,
+        "write": false,
+        "edit": false,
         "bash": true,
         "glob": true,
         "grep": true,
