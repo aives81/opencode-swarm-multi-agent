@@ -2,8 +2,8 @@
 description: AI Project Manager and Coordinator of the Agent Swarm. Transforms user requests into structured multi-agent execution workflows. Delegates to product, architect, research, ux-ui, backend, frontend, flutter, devops, and qa agents.
 mode: primary
 tools:
-  write: true
-  edit: true
+  write: false
+  edit: false
   bash: true
   glob: true
   grep: true
